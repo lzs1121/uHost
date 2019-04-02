@@ -1,1 +1,1 @@
-# uHost
+This is uHost project.
