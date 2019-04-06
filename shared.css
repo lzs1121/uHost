@@ -4,21 +4,37 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    margin: 0px;
+    margin: 0;
 }
 
 .main-header {
-    position: fixed; 
     width: 100%;
-    background: #2ddf5c;
-    padding: 8px 16px;
+    position: fixed;
     top: 0;
     left: 0;
+    background: #2ddf5c;
+    padding: 8px 16px;
+    z-index: 1;
 }
 
 .main-header > div {
     display: inline-block;
     vertical-align: middle;
+}
+
+.main-header__brand {
+    color: #0e4f1f;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+    height: 22px;
+    /* width: 20px; */
+    display: inline-block;
+}
+
+.main-header__brand img {
+    height: 100%;
+    /* width: 100%; */
 }
 
 .main-nav {
@@ -37,20 +53,13 @@ body {
 .main-nav__item {
     display: inline-block;
     margin: 0 16px;
-    font-weight: bold;
-    padding: 3px 0;
-}
-
-.main-header__brand {
-    color: #0e4f1f;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 22px;
 }
 
 .main-nav__item a {
     text-decoration: none;
     color: #0e4f1f;
+    font-weight: bold;
+    padding: 3px 0;
 }
 
 .main-nav__item a:hover,
@@ -60,7 +69,7 @@ body {
 }
 
 .main-nav__item--cta a {
-    color:white;
+    color: white;
     background: #ff1b68;
     padding: 8px 16px;
     border-radius: 8px;
@@ -105,14 +114,15 @@ body {
     background: #0e4f1f;
     color: white;
     font: inherit;
+    border: 1.5px solid #0e4f1f;
     padding: 8px;
     border-radius: 8px;
     font-weight: bold;
     cursor: pointer;
 }
 
-button:hover,
-button:active {
+.button:hover,
+.button:active {
     background: white;
     color: #0e4f1f;
 }
